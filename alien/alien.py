@@ -10,7 +10,7 @@ class Alien(Sprite):
         self.ai_settings = ai_settings
 
         # 加载外星人图像，并设置rect属性
-        self.image = pygame.image.load('alien/images/ufo.png')        
+        self.image = pygame.image.load('./images/ufo.png')        
         target_size = (100, 50)
         self.image = pygame.transform.scale(self.image, target_size)
         self.rect = self.image.get_rect()

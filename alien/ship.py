@@ -8,7 +8,7 @@ class Ship(Sprite):
         self.screen = screen
         self.ai_settings = ai_settings
         # 加载飞船图像并获取其外接矩形
-        self.image = pygame.image.load('alien/images/rocket.png')
+        self.image = pygame.image.load('./images/rocket.png')
         target_size = (200, 200)
         self.image = pygame.transform.scale(self.image, target_size)
         self.rect = self.image.get_rect()
